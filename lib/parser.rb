@@ -15,7 +15,7 @@ class Parser
             details = item.css("div.detail_wrapper")
             prices  = item.css("div.price_wrapper")
 
-            item_name   = details.css("div.pDescription div.normal h2 a").text.strip
+            item_name   = details.css("div.pDescription div.normal h2 a").text.strip.split(" PCIe")[0]
             product_id  = details.css("p.sku").text.strip.split(" ")[1]
             stock_quantity = details.css("div.stock").text.strip
             price = prices.css("div.price").text.strip
