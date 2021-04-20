@@ -21,7 +21,24 @@ class GPU_Price_Checker::CLI
 
     def list_GPUS
         GPU.all.each_with_index do |card, index|
-            puts "#{index + 1}. #{card.name}"
+            puts "#{index + 1}. #{card.name} | #{card.prices}"
+        end
+    end
+
+    def valid_input?(input)
+        i = input.to_i - 1
+        if i < Item.all.length && i >= 0
+            true
+        else 
+            false
+        end
+    end
+
+    def exit?(input)
+        if input == "exit"
+            true
+        else
+            false
         end
     end
 
