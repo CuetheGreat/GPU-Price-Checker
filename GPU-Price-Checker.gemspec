@@ -1,24 +1,24 @@
 # frozen_string_literal: true
 
-require_relative "lib/GPU/Price/Checker/version"
+require_relative "lib/Checker/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "GPU-Price-Checker"
-  spec.version       = GPU::Price::Checker::VERSION
+  spec.version       = GPU_Price_Checker::VERSION
   spec.authors       = ["Clayon Stewart"]
   spec.email         = ["C.Stewart89@gmail.com"]
 
-  spec.summary       = "TODO: Write a short summary, because RubyGems requires one."
-  spec.description   = "TODO: Write a longer description or delete this line."
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = "GPU price tracker CLI Project"
+  spec.description   = "Scrapes Microcenter.com for a list of available GPus and information about them."
+  spec.homepage      = "https://github.com/CuetheGreat/GPU-Price-Checker"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
-  spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
+  spec.metadata["allowed_push_host"] = "http://mygemserver.com"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "TODO: Put your gem's public repo URL here."
-  spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
+  spec.metadata["source_code_uri"] = "https://github.com/CuetheGreat/GPU-Price-Checker"
+  spec.metadata["changelog_uri"] = "https://github.com/CuetheGreat/GPU-Price-Checker/blob/main/CHANGELOG.md"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
